@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.Logo {
+    height: 150px;
+    width: 150px;
+    display: flex;
+  
+}
+
+nav {
+    height: 60px;
+    background-color: #159db9;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    align-items: center;
+    
+}
+nav ul li a:hover {
+    color: black;
+}
+
+/* Home Section */
+#Home {
+    background: url('https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fpng%2Fblue-modern-letter-c-tech-logo-design-670791c704a0b902273036.png&w=1280&q=75') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+#Home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
+}
+
+#Home .container {
+    position: relative;
+    z-index: 1;
+}
+
+#Home h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#Home p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* About Section */
+#about {
+    background: url('https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fpng%2Fblue-modern-letter-c-tech-logo-design-670791c704a0b902273036.png&w=1280&q=75') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Founders Cards */
+.founders {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #159db9;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Contact Section */
+#contact {
+    /* background: url('https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fpng%2Fblue-modern-letter-c-tech-logo-design-670791c704a0b902273036.png&w=1280&q=75') no-repeat center center/cover; */
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fpng%2Fblue-modern-letter-c-tech-logo-design-670791c704a0b902273036.png&w=1280&q=75');
+    
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 100%;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #553232;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-section .social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
